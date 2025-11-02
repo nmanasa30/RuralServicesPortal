@@ -1,0 +1,100 @@
+.services-page {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(to bottom, #e8fce8, #f4fff3);
+  font-family: "Poppins", sans-serif;
+  color: #333;
+}
+
+/* Header Section */
+.services-header {
+  background-color: #c8f7c5;
+  border-radius: 20px;
+  padding: 50px 20px;
+  margin-bottom: 40px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.services-header h1 {
+  font-size: 2.3rem;
+  color: #2e7d32;
+  margin-bottom: 10px;
+}
+
+.services-header p {
+  font-size: 1.1rem;
+  color: #444;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Grid Layout */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  padding: 20px;
+}
+
+/* Card Styles */
+.service-card {
+  background-color: white;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  animation: fadeUp 1s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.icon {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  display: block;
+}
+
+/* Hover Glow Effect */
+.service-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(76, 175, 80, 0.1);
+  transition: all 0.4s ease;
+}
+
+.service-card:hover::before {
+  left: 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
