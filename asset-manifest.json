@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/RuralServicesPortal/static/css/main.de024416.css",
+    "main.js": "/RuralServicesPortal/static/js/main.fef489e1.js",
+    "index.html": "/RuralServicesPortal/index.html",
+    "main.de024416.css.map": "/RuralServicesPortal/static/css/main.de024416.css.map",
+    "main.fef489e1.js.map": "/RuralServicesPortal/static/js/main.fef489e1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.de024416.css",
+    "static/js/main.fef489e1.js"
+  ]
+}
